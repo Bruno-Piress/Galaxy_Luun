@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #7795FF
+}
+
+header {
+    font-family: 'Alfa Slab One', cursive;
+    color: white;
+    background-image: url(img/imgTopo/Background\ Topo.svg);
+    height: 699px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.textTopo {
+    font-size: 64px;
+    background-image: linear-gradient(to right bottom, #ffffff, #ffffff, #ffffff, #4f607e, #003457);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    top: 80px;
+    font-size: 24px;
+}
+
+.container p {
+    margin: 1px 0;
+}
+
+.sec1 {
+    background: #7795FF;
+    /* position: absolute; */
+    width: 100%;
+    height: 600px;
+    left: 0px;
+    top: 699px;
+}
+
+.container2 {
+    text-align: center;
+    color: white;
+    font: 30px arial;
+    position: relative;
+    top: 5px;
+}
+
+.imgsBloco1 {
+    /* border: solid 2px red; */
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-carousel .my-card {
+    height: 20rem;
+    width: 18rem;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-2rem);
+    transform: scale(0.6) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    /* background: #2e5266; */
+    /* background: linear-gradient(to top, #2e5266, #6e8898); */
+    transition: 1s;
+}
+
+.card-carousel .my-card:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: -5rem;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.card-carousel .my-card.active {
+    z-index: 3;
+    -webkit-transform: scale(1) translateY(0) translateX(0);
+    transform: scale(1) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: .5s;
+}
+
+.card-carousel .my-card.prev,
+.card-carousel .my-card.next {
+    z-index: 2;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+    transform: scale(0.8) translateY(-1rem) translateX(0);
+    opacity: 0.6;
+    pointer-events: auto;
+    transition: .5s;
+}
+
+.sec2 {
+    /* border: solid 2px red; */
+    height: 1000px;
+}
+
+.imgBloco2 {
+    background-image: url(img/imgBloco2/imgBloco2.svg);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sec3 {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+}
+
+.sec3 {
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.imgBloco3 {
+    display: flex;
+    /* border: solid 2px red; */
+    background-image: url(img/imgBloco3/imgBloco3.svg);
+    /* background-color: #003457; */
+    height: 400px;
+    width: 300px;
+    border-radius: 17px;
+    background-size: 368px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.653);
+}
+
+.pText {
+    display: flex;
+    align-items: center;
+    /* border: solid 2px; */
+    height: 300px;
+    width: 400px;
+    font: normal 20pt arial;
+    color: #421F95;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* Espaçamento entre a imagem e o texto */
+}
+
+.imgBloco4 {
+    background-image: url(img/imgBloco4/bgBloco4.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+.section5 {
+    /* border: 2px solid red; */
+    height: 500px;
+}
+
+.sec5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 400px;
+    gap: 30px;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4 {
+    display: flex;
+    border-radius: 300px;
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.402);
+}
+
+.nav1 {
+    background-image: url(img/imgBloco5/Ellipse\ 1.svg);
+    background-position: center;
+}
+
+.nav2 {
+    background-image: url(img/imgBloco5/Ellipse\ 2.svg);
+    background-position: center;
+}
+
+.nav3 {
+    background-image: url(img/imgBloco5/Ellipse\ 3.svg);
+    background-position: center;
+}
+
+.nav4 {
+    background-image: url(img/imgBloco5/Ellipse\ 4.svg);
+    background-position: center;
+}
+
+.txtB5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* border: solid 2px green; */
+}
+
+
+.textB5 {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3A0397;
+    height: 80px;
+    width: 70%;
+    border-radius: 50px;
+}
+
+.imgBloco6 {
+    background-image: url(img/imgBloco6/imgBloco6.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+footer {
+    /* border: solid 2px red; */
+    height: 650px;
+    position: relative;
+    /* Adiciona posicionamento relativo para poder posicionar o botão dentro da imagem */
+}
+
+.nave {
+    background-image: url(img/imgFinal/osDois.svg);
+    height: 650px;
+    position: relative;
+    /* Adiciona posicionamento relativo para ser a referência para o posicionamento absoluto do botão */
+}
+
+.btnD {
+    position: absolute;
+    /* Adiciona posicionamento absoluto para posicionar o botão */
+    bottom: 200px;
+    /* Ajusta a posição vertical do botão em relação à imagem */
+    right: 150px;
+    /* Ajusta a posição horizontal do botão em relação à imagem */
+}
+
+.btnD button {
+    background-color: #531EB2;
+    color: white;
+    border: none;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 60px;
+    border-radius: 50px;
+    height: 100px;
+    width: 500px;
+    transition: all 0.3s linear;
+}
+
+.btnD button:hover {
+    background-color: white;
+    color: #531EB2;
+
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.208));
+
+    border: 2px solid #531EB2;
+    border-radius: 100px;
+}
+
+.iconPlayStore {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 230px;
+    right: 320px;
+}
